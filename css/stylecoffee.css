@@ -39,7 +39,7 @@ div#game {
 div#background {
     width: 100%;
     height: 100%;
-    background-image: url('https://i.pinimg.com/originals/62/54/49/6254491a98878eaa3a3c5dd6f38d3788.jpg');
+    background-image: url('../img/grass.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     object-fit: cover;
@@ -68,7 +68,7 @@ div#missiles{
 div.missile{
     width: 40px;
     height: 20px;
-    background-image: url('./irish-coffee/hand.png');
+    background-image: url('../img/hand.png');
     background-size: 100% 100%;
     object-fit: cover;
     position: absolute;
@@ -83,7 +83,7 @@ div#enemies {
 div.enemy {
     width: 50px;
     height: 50px;
-    background-image: url('./irish-coffee/coffee.png');
+    background-image: url('../img/coffee.png');
     background-size: 100% 100%;
     object-fit: cover;
     position: absolute;
