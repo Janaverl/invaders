@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+h1, h2{
+    color: white;
+    line-height: 10vh;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    color: red;
+}
+
+div#text{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blink {
+    -webkit-animation: blink 2s step-end infinite;
+    animation: blink 2s step-end infinite;
+}
+@-webkit-keyframes blink { 50% { visibility: hidden; }}
+@keyframes blink { 50% { visibility: hidden; }}
+
+div#game {
+    margin: 0 auto;
+    width: 1200px;
+    height: 600px;
+    position: relative;
+}
+
+div#background {
+    width: 100%;
+    height: 100%;
+    background-image: url('https://i.pinimg.com/originals/62/54/49/6254491a98878eaa3a3c5dd6f38d3788.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    object-fit: cover;
+    overflow: hidden;
+    position: absolute;
+}
+
+div#hero{
+    width: 150px;
+    height: 150px;
+    background-image: url('https://cdn1.iconfinder.com/data/icons/bikes-1/300/isolated_bike-cargo-christiania-512.png');
+    background-size: 100% 100%;
+    object-fit: cover;
+    position: absolute;
+    left: 600px;
+    /* margin-left: -50px; */
+    top: 450px;
+}
+
+div#missiles{
+    width: 1200px;
+    height: 600px;
+    position: absolute;
+}
+
+div.missile{
+    width: 40px;
+    height: 20px;
+    background-image: url('./irish-coffee/hand.png');
+    background-size: 100% 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+div#enemies {
+    width: 1200px;
+    height: 800px;
+    position: absolute;
+}
+
+div.enemy {
+    width: 50px;
+    height: 50px;
+    background-image: url('./irish-coffee/coffee.png');
+    background-size: 100% 100%;
+    object-fit: cover;
+    position: absolute;
+}
