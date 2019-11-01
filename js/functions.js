@@ -40,13 +40,14 @@ function positionEnemysRandom(startTop, number, distance){
   return enemies;
 }
 
-function drawEnemies(array){
-    document.getElementById('enemies').innerHTML = "";
+function drawEnemies(array, idContainer, classItself){
+    document.getElementById(idContainer).innerHTML = "";
     
     for (var teller = 0; teller < array.length; teller++){
-        document.getElementById('enemies').innerHTML += `<div class='enemy' style='left:${array[teller].left}px; top:${array[teller].top}px'></div>`;
+        document.getElementById(idContainer).innerHTML += '<div class="'+classItself+'" style="left: '+array[teller].left+'px; top: '+array[teller].top+'px"></div>';
     }
 }
+
 
 function moveEnemies(array, speed){
   for(var teller = 0; teller < array.length; teller++){
@@ -98,7 +99,7 @@ function hitAnEnnemy(arrayEnemies, arrayMissiles){
 
 // catch an enmie with the hero
 
-function catchAnEnnemy(array, animation = ""){
+function catchAnEnnemy(array, action = ""){
   for (var t = 0; t < array.length; t++){
     if(
         500 <= (array[t].top + 50)
@@ -109,10 +110,13 @@ function catchAnEnnemy(array, animation = ""){
         &&
         (hero.left+150) >= array[t].left
     ){array.splice(t, 1);
-      if(animation != ""){
-        document.getElementById('hero').className += animation;
+      if(action == "gameOver"){
+        gameOver();
+      }
+      else if(action != ""){
+        document.getElementById('hero').className += action;
         setTimeout(function() {
-            document.getElementById('hero').classList.remove(animation);
+            document.getElementById('hero').classList.remove(action);
         }, 500);
       }
     }
@@ -138,11 +142,15 @@ function startOrPause(){
 function endGame(array){
   for (var t = 0; t < array.length; t++){
       if((array[t].top + 50) > 600){
-          myStopFunction();
-          document.getElementById('text').innerHTML = "<h1>Sorry, je hebt verloren!</h1>";
+        gameOver();
       }
   }
   if(array.length == 0){
       document.getElementById('text').innerHTML = "<h1>Woohoow! Je won!</h1>";
   }
+}
+
+function gameOver(){
+  myStopFunction();
+  document.getElementById('text').innerHTML = "<h1>Sorry, je hebt verloren!</h1>";
 }

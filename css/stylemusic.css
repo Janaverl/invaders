@@ -14,6 +14,11 @@ div.enemy {
     background-image: url(../img/headphones.png);
 }
 
+div.enemyBad {
+        background-image: url(../img/headphonesred.png);
+}
+
+
 /* wobble the hero */
 .wobble-hor-bottom {
 	-webkit-animation: wobble-hor-bottom 0.4s both;

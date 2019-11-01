@@ -15,7 +15,7 @@ var enemies = [
 ];
 
 // draw the enemies
-drawEnemies(enemies);
+drawEnemies(enemies, 'enemies', 'enemy');
 
 
 document.onkeydown = function(e){
@@ -40,7 +40,7 @@ function gameLoop(){
     game = setTimeout(gameLoop, 100);
     moveMissiles(missiles);
     drawMissiles(missiles);
-    drawEnemies(enemies);
+    drawEnemies(enemies, 'enemies', 'enemy');
     moveEnemies(enemies, 2);
     hitAnEnnemy(enemies, missiles);
     endGame(enemies);

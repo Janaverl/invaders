@@ -2,7 +2,7 @@ var hero = positionHero(600, 480);
 
 var enemies = positionEnemysRandom(0, 10, 100);
 
-drawEnemies(enemies);
+    drawEnemies(enemies, 'enemies', 'enemy');
 
 
 document.onkeydown = function(e){
@@ -21,7 +21,7 @@ var game;
 
 function gameLoop(){
     game = setTimeout(gameLoop, 100);
-    drawEnemies(enemies);
+        drawEnemies(enemies, 'enemies', 'enemy');
     moveEnemies(enemies, 8);
     catchAnEnnemy(enemies);
     endGame(enemies);
