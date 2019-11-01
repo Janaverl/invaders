@@ -3,9 +3,11 @@ body{
     background-image: url(../img/black.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    font-family: 'Slabo 27px', serif;
 }
 
 h1, h2{
+    font-family: 'Yeon Sung', cursive;
     color: white;
     line-height: 10vh;
     text-align: center;
