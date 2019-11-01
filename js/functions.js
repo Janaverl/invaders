@@ -128,7 +128,7 @@ function startOrPause(){
   if(document.getElementById('text').innerHTML === ""){
     myStopFunction();
     document.getElementById('text').innerHTML = "<h1>pauze</h1>";
-  } else if(document.getElementById('text').innerHTML != "<h1>game over!</h1>" ){
+  } else if(document.getElementById('text').innerHTML != "<h1>Sorry, je hebt verloren!</h1>" ){
     gameLoop();
     document.getElementById('text').innerHTML = "";
   }
@@ -139,10 +139,10 @@ function endGame(array){
   for (var t = 0; t < array.length; t++){
       if((array[t].top + 50) > 600){
           myStopFunction();
-          document.getElementById('text').innerHTML = "<h1>game over!</h1>";
+          document.getElementById('text').innerHTML = "<h1>Sorry, je hebt verloren!</h1>";
       }
   }
   if(array.length == 0){
-      document.getElementById('text').innerHTML = "<h1>You won!</h1>";
+      document.getElementById('text').innerHTML = "<h1>Woohoow! Je won!</h1>";
   }
 }

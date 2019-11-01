@@ -1,4 +1,3 @@
-// setting positions and arrays of all the animated elements
 var hero = positionHero(600, 480);
 
 var enemies = positionEnemysRandom(0, 10, 200);
@@ -16,31 +15,7 @@ document.onkeydown = function(e){
     } 
 }
 
-// function catchAnEnnemy(){
-//     for (var t = 0; t < enemies.length; t++){
-//             if(
-//                 500 <= (enemies[t].top + 50)
-//                 &&
-//                 550 >= (enemies[t].top + 50)
-//                 &&
-//                 hero.left <= enemies[t].left
-//                 &&
-//                 (hero.left+150) >= enemies[t].left
-//             ){
-//                 enemies.splice(t, 1);
-//                 // var el = document.getElementById('hero');
-//                 // console.log(el);
-//                 document.getElementById('hero').className += 'wobble-hor-bottom';
-//                 setTimeout(function() {
-//                     document.getElementById('hero').classList.remove("wobble-hor-bottom");
-//                     //your code to be executed after 1 second
-//                 }, 500);
-//             }
-//     }
-// }
-
 // gameloops
-
 var game;
 
 function gameLoop(){

@@ -1,4 +1,3 @@
-// setting positions and arrays of all the animated elements
 var hero = positionHero(600, 480);
 
 var missiles = [];

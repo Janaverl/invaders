@@ -1,4 +1,3 @@
-// setting positions and arrays of all the animated elements
 var hero = positionHero(600, 480);
 
 var enemies = positionEnemysRandom(0, 10, 100);
@@ -17,25 +16,7 @@ document.onkeydown = function(e){
     } 
 }
 
-// function catchAnEnnemy(){
-//     for (var t = 0; t < enemies.length; t++){
-//             if(
-//                 500 <= (enemies[t].top + 50)
-//                 &&
-//                 550 >= (enemies[t].top + 50)
-//                 &&
-//                 hero.left <= enemies[t].left
-//                 &&
-//                 (hero.left+150) >= enemies[t].left
-//             ){
-//                 enemies.splice(t, 1);
-//             }
-//     }
-// }
-
-
 // gameloops
-
 var game;
 
 function gameLoop(){
