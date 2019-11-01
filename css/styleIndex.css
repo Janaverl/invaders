@@ -3,6 +3,34 @@ a{
     text-decoration: none;
 }
 
+
+.title{
+    height: 25vh;
+}
+
+.gameWrapper{
+    max-height: 65vh;
+    overflow: auto;
+    direction: ltr;
+}
+
+.games {
+    padding: 0 40px;
+    display: grid;
+    grid-gap: 40px;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+}
+
+.game {
+    margin: 0 10px 20px 10px;
+    width: auto;
+    min-width: 270px;
+    height: 270px;
+    /* background-color: white; */
+    /* transition: 0.8s; */
+    background-color: lightgrey;
+}
+
 h4{
     text-transform: uppercase;
     margin: 0;
@@ -10,30 +38,22 @@ h4{
     padding: 20px;
 }
 
-p{
+.game p{
     padding: 20px;
 }
 
-.games {
-    display: grid;
-    grid-gap: 10px;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
-    padding: 30px;
-}
-
-.game {
-    margin: 10px;
-    width: auto;
-    min-width: 270px;
-    height: 270px;
-    background-color: white;
-    transition: 0.8s;
-    background-image: url(../img/grassAndBlueSky.jpg);
-}
-
 footer{
-    background-color: grey;
+    padding: 2.5vh;
+    /* background-color: rgba(0,0,0,0.5); */
+    /* -webkit-box-shadow: inset 0px 76px 223px 45px rgba(0,0,0,0.5);
+-moz-box-shadow: inset 0px 76px 223px 45px rgba(0,0,0,0.75); */
+box-shadow: inset 7px 20px 100px 10px rgba(0,0,0,0.5);
+    color: white;
     position: fixed;
     bottom: 0;
-    width: 100%;
+    left: 0;
+    right: 0;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
 }
