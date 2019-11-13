@@ -146,7 +146,7 @@ function endGame(array){
       }
   }
   if(array.length == 0){
-      document.getElementById('text').innerHTML = "<h1>Woohoow! Je won!</h1>";
+      document.getElementById('text').innerHTML = "<h1>Joepie, je hebt gewonnen!</h1>";
   }
 }
 

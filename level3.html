@@ -7,10 +7,30 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleHeroGames.css">
     <link rel="stylesheet" href="./css/stylemusic.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end of favicon -->
+
     <title>Koffie en koekjes | Music I</title>
 </head>
 <body>
-    <h2>Verzamel 10 koptelefoons. Als je er ééntje vangt, doe dan een dansje.</h2>
+    <div class="smallScreens">
+    </div>
+    <div class="navigate">
+            <a href="./index.html">home</a>
+            <a href="./level3.html">replay</a>
+        </div>
+    <div class="instructions">
+        <p>Verzamel 10 koptelefoons. Als je er ééntje vangt, doe dan een dansje.</p>
+        <p>Gebruik de rechter en linker pijljes om te bewegen.</p>
+    </div>
     <div id="game">
         <div id="background">
             <div id="hero"></div>                
@@ -18,7 +38,7 @@
             <div id="text" class="blink"><h1>Duw op enter om te starten</h1></div>
         </div>        
     </div>
-    <h2>gebruik de rechter en linker pijljes om te bewegen.</h2>
+    
     <script src="./js/functions.js"></script>
     <script src="./js/scriptlevel3.js"></script>
 </body>

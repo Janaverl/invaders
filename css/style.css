@@ -1,15 +1,17 @@
 body{
     min-height: 100vh;
     width: 100vw;
+    max-width: 100%;
     margin: 0;
     background-image: url(../img/black.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    font-family: 'Slabo 27px', serif;
+    /* font-family: 'Slabo 27px', serif; */
+    position: relative;
 }
 
 @media only screen and (max-width: 1200px) {
-    .content {
+    .content, .instructions, #game {
       display: none;
     }
     .smallScreens{
@@ -19,7 +21,7 @@ body{
         font-weight: bold;
     }
     .smallScreens::after{
-        content: "Helaas, dit scherm is te klein om deze website te bezoeken. Je kan altijd koffie drinken in de plaats.";
+        content: "Helaas, dit scherm is te klein om deze spelletjes te spelen. Je kan ook gewoon een koffie drinken in de plaats.";
     }
   }
 
@@ -47,24 +49,7 @@ div#text{
     -webkit-animation: blink 2s step-end infinite;
     animation: blink 2s step-end infinite;
 }
+
 @-webkit-keyframes blink { 50% { visibility: hidden; }}
 @keyframes blink { 50% { visibility: hidden; }}
 
-
-div#game {
-    margin: 0 auto;
-    width: 1200px;
-    height: 600px;
-    position: relative;
-}
-
-div#background {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-    object-fit: cover;
-    overflow: hidden;
-    position: absolute;
-    /* transition: 0.8s; */
-}

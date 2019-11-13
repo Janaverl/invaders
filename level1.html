@@ -7,10 +7,30 @@
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/styleHeroGames.css">
     <link rel="stylesheet" href="./css/stylecoffee.css">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="mask-icon" href="./safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- end of favicon -->
+    
     <title>Koffie en koekjes | koffie I</title>
 </head>
 <body>
-    <h2>Verzamel zoveel mogelijk koffies. Schiet de handjes uit de bakfiets om de koffies te verzamelen.</h2>
+    <div class="smallScreens">
+    </div>
+    <div class="navigate">
+        <a href="./index.html">home</a>
+        <a href="./level1.html">replay</a>
+    </div>
+    <div class="instructions">
+        <p>Verzamel zoveel mogelijk koffies. Schiet de handjes uit de bakfiets om de koffies te verzamelen.</p>
+        <p>Gebruik de rechter en linker pijljes om te bewegen. met de spacebar schiet je handjes uit de bakfiets.</p>
+    </div>
     <div id="game">
         <div id="background">
             <div id="hero"></div>                
@@ -19,7 +39,6 @@
         <div id="text" class="blink"><h1>Duw op enter om te starten</h1></div>
         </div>        
     </div>
-    <h2>gebruik de rechter en linker pijljes om te bewegen. met de spacebar schiet je handjes uit de bakfiets.</h2>
     <script src="./js/functions.js"></script>
     <script src="./js/scriptlevel1.js"></script>
 </body>
