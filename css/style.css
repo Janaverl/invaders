@@ -10,8 +10,39 @@ body{
     position: relative;
 }
 
+.navigate{
+    padding: 2.5vh;
+    box-shadow: inset 7px 20px 100px 10px rgba(0,0,0,0.5);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+}
+
+.navigate a{
+    padding: 20px;
+    color: white;
+}
+
+footer{
+    padding: 2.5vh;
+    margin-top: 100px;
+    box-shadow: inset 7px 20px 100px 10px rgba(0,0,0,0.5);
+    color: white;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+}
+
 @media only screen and (max-width: 1200px) {
-    .content, .instructions, #game {
+    .content, .instructions, #game, .navigate, footer {
       display: none;
     }
     .smallScreens{

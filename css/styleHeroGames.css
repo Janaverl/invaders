@@ -1,21 +1,15 @@
-.navigate{
-    padding: 20px;
-}
-
-.navigate a{
-    padding: 20px;
-    color: white;
-}
-
-.instructions{
-    margin: 50px;
-}
-
 p{
     font-family: 'Yeon Sung', cursive;
     font-size: 20px;
     color: white;
     text-align: center;
+}
+
+
+footer p{
+    color: white;
+    text-decoration: none;
+    font-size: initial;
 }
 
 div#game {
